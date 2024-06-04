@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wp"
+version = "0.1.0"
+description = "A simple word processor built in Textual"
+authors = ["Daniel Lyons <fusion@storytotell.org>"]
+readme = "README.md"
+license = "BSD"
+packages = [
+  { include = "wp" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.64.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wp = "wp:main"
